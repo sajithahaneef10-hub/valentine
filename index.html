@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Hani & Saju 💖</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Hani & Saju 🤍</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 *{
@@ -13,10 +13,11 @@
 
 body{
   margin:0;
+  min-height:100vh;
   overflow-x:hidden;
 }
 
-/* ===== LOGIN BACKGROUND ===== */
+/* ===== BACKGROUND ===== */
 .bg{
   position:fixed;
   inset:0;
@@ -30,19 +31,30 @@ body{
   z-index:-1;
 }
 
-/* ===== LOGIN BOX (MOBILE SAFE) ===== */
-.login-box{
-  min-height:100svh; /* mobile safe height */
+/* ===== LOGIN CONTAINER ===== */
+.login-container{
+  min-height:100vh;
   display:flex;
+  flex-direction:column;
   align-items:center;
   justify-content:center;
   padding:20px;
 }
 
+/* TOP IMAGE */
+.top-image{
+  width:100%;
+  max-width:260px;
+  margin-bottom:20px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* LOGIN CARD */
 .login-card{
   width:100%;
   max-width:340px;
-  padding:30px 24px;
+  padding:28px 24px;
   background:rgba(255,255,255,0.6);
   backdrop-filter:blur(14px);
   border-radius:26px;
@@ -53,12 +65,14 @@ body{
 .login-card h1{
   margin-bottom:8px;
   color:#c94a6a;
+  font-size:22px;
 }
 .login-card p{
   color:#555;
   font-size:14px;
   margin-bottom:18px;
 }
+
 .login-card input{
   width:100%;
   padding:12px;
@@ -67,11 +81,12 @@ body{
   border:1px solid #ddd;
   font-size:15px;
 }
+
 .login-card button{
-  margin-top:12px;
+  margin-top:14px;
   width:100%;
   padding:12px;
-  border-radius:16px;
+  border-radius:18px;
   border:none;
   background:linear-gradient(135deg,#ff9a9e,#e75480);
   color:white;
@@ -82,18 +97,12 @@ body{
 /* ===== MAIN PAGE ===== */
 .main{
   display:none;
-  min-height:100svh;
+  min-height:100vh;
   background:#fff5f7;
   padding:20px 14px 70px;
   text-align:center;
 }
 
-h1,h2{
-  color:#b5476b;
-  margin-bottom:10px;
-}
-
-/* ===== IMAGE SECTIONS ===== */
 .section{
   margin:22px auto;
   max-width:520px;
@@ -105,11 +114,11 @@ h1,h2{
   box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-/* ===== QUOTE SECTION ===== */
+/* QUOTE */
 .quote-section{
   background:url("sh.jpg") center/cover no-repeat;
   border-radius:26px;
-  padding:26px 20px;
+  padding:28px 22px;
   margin:26px auto;
   max-width:520px;
   color:white;
@@ -124,7 +133,6 @@ h1,h2{
   border-radius:18px;
 }
 
-/* ===== FINAL THANK YOU ===== */
 .thankyou p{
   color:#6b3a4b;
   font-size:16px;
@@ -144,26 +152,28 @@ h1,h2{
 <div class="bg"></div>
 <div class="overlay"></div>
 
-<!-- LOGIN -->
-<div class="login-box" id="loginBox">
+<!-- LOGIN PAGE -->
+<div class="login-container" id="loginBox">
+
+  <!-- TOP IMAGE -->
+  <img src="sh9.jpeg" class="top-image" alt="Our Love">
+
+  <!-- LOGIN CARD -->
   <div class="login-card">
-    <h1>Ooiii Haniii💖</h1>
-    <p>Something special 🤍 Just for you</p>
+    <h1>Ooiii Haniii 💖</h1>
+    <p>Something special 🤍 just for you</p>
 
     <input type="text" id="username" placeholder="Your name">
     <input type="password" id="password" placeholder="Our secret">
 
-    <button onclick="login()">🤍</button>
+    <button onclick="login()">Enter 🤍</button>
   </div>
 </div>
 
-<!-- MAIN -->
+<!-- MAIN PAGE -->
 <div class="main" id="mainPage">
 
-  <h1>To my dear Haniii🤍</h1>
-  <p>Since I can’t be there with you, I wanted to give you something made with love,
- even from far away</p>
- <h2>Lovvvv u Haniiii🥹😘<br>Miss u a Lotttttt🥺🫂</h2>
+  <h2>Lovvvv you Haniiii 🥹🤍</h2>
 
   <div class="section"><img src="p4.png"></div>
   <div class="section"><img src="p3.png"></div>
@@ -172,8 +182,7 @@ h1,h2{
     <p>
       We believe our relationship is not just love,<br>
       but a responsibility, a promise, and a prayer.<br><br>
-      Built on trust, patience, and faith,<br>
-      guided by Allah, and held together by respect 🤍
+      Guided by Allah, held together by respect 🤍
     </p>
   </div>
 
@@ -185,7 +194,6 @@ h1,h2{
     <img src="sh8.jpeg">
     <p>
       Thank you for coming into my life 🤍<br>
-      For choosing me, supporting me, and loving me.<br>
       May Allah keep us together — always.
     </p>
   </div>
