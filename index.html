@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Hani & Saju 💖</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 <style>
 *{
@@ -13,7 +13,6 @@
 
 body{
   margin:0;
-  min-height:100vh;
   overflow-x:hidden;
 }
 
@@ -27,23 +26,24 @@ body{
 .overlay{
   position:fixed;
   inset:0;
-  background:rgba(255,255,255,0.15);
+  background:rgba(255,255,255,0.18);
   z-index:-1;
 }
 
-/* ===== LOGIN CARD ===== */
+/* ===== LOGIN BOX (MOBILE SAFE) ===== */
 .login-box{
-  position:fixed;
-  inset:0;
+  min-height:100svh; /* mobile safe height */
   display:flex;
   align-items:center;
   justify-content:center;
+  padding:20px;
 }
 
 .login-card{
-  width:320px;
+  width:100%;
+  max-width:340px;
   padding:30px 24px;
-  background:rgba(255,255,255,0.55);
+  background:rgba(255,255,255,0.6);
   backdrop-filter:blur(14px);
   border-radius:26px;
   text-align:center;
@@ -65,6 +65,7 @@ body{
   margin:8px 0;
   border-radius:14px;
   border:1px solid #ddd;
+  font-size:15px;
 }
 .login-card button{
   margin-top:12px;
@@ -81,7 +82,7 @@ body{
 /* ===== MAIN PAGE ===== */
 .main{
   display:none;
-  min-height:100vh;
+  min-height:100svh;
   background:#fff5f7;
   padding:20px 14px 70px;
   text-align:center;
@@ -108,7 +109,7 @@ h1,h2{
 .quote-section{
   background:url("sh.jpg") center/cover no-repeat;
   border-radius:26px;
-  padding:28px 22px;
+  padding:26px 20px;
   margin:26px auto;
   max-width:520px;
   color:white;
@@ -124,10 +125,6 @@ h1,h2{
 }
 
 /* ===== FINAL THANK YOU ===== */
-.thankyou{
-  margin-top:30px;
-}
-
 .thankyou p{
   color:#6b3a4b;
   font-size:16px;
@@ -166,25 +163,11 @@ h1,h2{
   <h1>To my dear Haniii🤍</h1>
   <p>Since I can’t be there with you, I wanted to give you something made with love,
  even from far away</p>
- <h2>Lovvvv u Haniiii🥹😘,
-   Miss u a Lotttttt🥺🫂</h2>
-   <br>
-   ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
+ <h2>Lovvvv u Haniiii🥹😘<br>Miss u a Lotttttt🥺🫂</h2>
 
+  <div class="section"><img src="p4.png"></div>
+  <div class="section"><img src="p3.png"></div>
 
-  <!-- P4 -->
-  <div class="section">
-    <img src="p4.png">
-  </div>
-<br>
- ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  <!-- P3 -->
-  <div class="section">
-    <img src="p3.png">
-  </div>
-<br>
-❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  <!-- QUOTE -->
   <div class="quote-section">
     <p>
       We believe our relationship is not just love,<br>
@@ -193,27 +176,11 @@ h1,h2{
       guided by Allah, and held together by respect 🤍
     </p>
   </div>
-<br>
-❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  <!-- P2 -->
-  <div class="section">
-    <img src="p2.png">
-  </div>
-<br>
-❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  <!-- P1 -->
-  <div class="section">
-    <img src="p1.png">
-  </div>
-<br>
-❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  <!-- SH6 -->
-  <div class="section">
-    <img src="sh6.jpeg">
-  </div>
-<br>
-❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
-  <!-- FINAL -->
+
+  <div class="section"><img src="p2.png"></div>
+  <div class="section"><img src="p1.png"></div>
+  <div class="section"><img src="sh6.jpeg"></div>
+
   <div class="section thankyou">
     <img src="sh8.jpeg">
     <p>
