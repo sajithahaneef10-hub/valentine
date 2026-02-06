@@ -276,9 +276,9 @@ h1,h2{
 <script>
 function login(){
   const u = document.getElementById("username").value.trim().toLowerCase();
-  const p = document.getElementById("password").value.trim();
+  const p = document.getElementById("password").value.trim().toLowerCase();
 
-  if(u==="Hani" && p==="jan10"){
+  if(u === "hani" && p === "jan10"){
     document.getElementById("loginBox").style.display="none";
     document.getElementById("mainPage").style.display="block";
     document.getElementById("bgMusic").play();
@@ -290,6 +290,7 @@ function login(){
 
 </body>
 </html>
+
 
 
 
